@@ -1,53 +1,51 @@
-POST https://api.sparkpost.com/api/v1/transmissions
-
 {
     "options": {
         "open_tracking": true,
         "click_tracking": true
     },
-    "campaign_id": "email-receipt",
+    "substitution_data": {
+    	"table_number": "1",
+        "orders": [
+            {
+            	"order_number": 1,
+                "isMember": true,
+                "items": [
+                	{
+                		"name": "Sandwich",
+                		"price": "10.00"
+                	},
+                	{
+                		"name": "Chips",
+                		"price": "2.50"
+                	},
+                	{
+                		"name": "Soda",
+                		"price": "1.99"
+                	}
+                ]
+            },
+            {
+                "order_number": 2,
+                "isMember": false,
+                "items": [
+                	{
+                		"name": "Pizza Slice",
+                		"price": "2.00"
+                	},
+                	{
+                		"name": "Soda",
+                		"price": "1.99"
+                	}
+                ]
+            }
+        ]
+    },
+    "campaign_id": "test",
     "recipients": [
         {
             "address": {
-                "email": "recipient@example.com",
+                "email": "darren.smith@sparkpost.com",
                 "name": "test recipient"
-            },
-            "substitution_data": {
-                "table_number": "1",
-                "orders": [
-                	{
-                		"order_number": 1,
-                		"isMember": true,
-                		"items": [
-                			{
-                				"name": "Sandwich",
-                				"price": "10.00"
-                			},
-                			{
-                				"name": "Chips",
-                				"price": "2.50"
-                			},
-                			{
-                				"name": "Soda",
-                				"price": "1.99"
-                			}
-                		]
-                	},
-                	{
-                		"order_number": 2,
-                		"isMember": false,
-                		"items": [
-                			{
-                				"name": "Pizza Slice",
-                				"price": "2.00"
-                			},
-                			{
-                				"name": "Soda",
-                				"price": "1.99"
-                			}
-                		]
-                	}
-                ]
             }
         }
     ],
