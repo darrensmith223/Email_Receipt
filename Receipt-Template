@@ -1,0 +1,13 @@
+Table: {{table_number}}
+{{each orders}}
+<p>--------</p>
+<p>Order: {{loop_vars.orders.order_number}}</p>
+  {{each loop_vars.orders.items}}
+  <p>Item:  {{loop_vars.items.name}}, Price: {{loop_vars.items.price}}</p>
+  {{end}}
+  
+  {{if loop_vars.orders.isMember}}
+  <p>Thanks for being a Club Member!</p>
+  {{end}}
+{{end}}
+<p>--------</p>
