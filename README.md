@@ -25,5 +25,5 @@ To send the message and pass the substitution data, the messages will need to be
 
 # How to Use This Example
 * Store the template included in this project as a Stored Template within your SparkPost account using the template ID "email-receipt".
-* Copy and Paste the API call included in this project in Postman - make sure to update the hostname to correspond with the appropriate endpoint for your SparkPost account
+* Copy and Paste the API call included in this project in Postman - make sure to update the [hostname](https://developers.sparkpost.com/api/#header-endpoints) to correspond with the appropriate endpoint for your SparkPost account
 * Update the body of the API call to include your email address as the recipient.
