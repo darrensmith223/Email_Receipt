@@ -5,6 +5,7 @@ Table: {{table_number}}
   {{each loop_vars.orders.items}}
   <p>Item:  {{loop_vars.items.name}}, Price: {{loop_vars.items.price}}</p>
   {{end}}
+  <p>Subtotal: {{loop_vars.orders.subtotal}}</p>
   
   {{if loop_vars.orders.isMember}}
   <p>Thanks for being a Club Member!</p>
