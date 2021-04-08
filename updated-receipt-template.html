@@ -125,7 +125,7 @@
                                   </tr> {{each loop_vars.orders.items}}
                                   <tr class="tr" style="background-color: #F2F2F2;" bgcolor="#F2F2F2">
                                     <td class="td" style="padding: 8px; border: 1px solid #DDDDDD;">{{loop_vars.items.name}}
-                                      <td class="td" style="padding: 8px; border: 1px solid #DDDDDD;">{{loop_vars.items.price}} </td>
+                                      <td class="td" style="padding: 8px; border: 1px solid #DDDDDD; text-align: right;">{{loop_vars.items.price}} </td>
                                     </td>
                                   </tr> {{end}} </table> 
                                   <p class="text p" style="display: block; margin: 14px 0; color: #000000; font-family: Helvetica,Arial,sans-serif; font-size: 16px; line-height: 20px; text-align: right;">Subtotal: {{loop_vars.orders.subtotal}}</p> {{if loop_vars.orders.isMember}}
