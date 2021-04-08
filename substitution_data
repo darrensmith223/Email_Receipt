@@ -1,0 +1,39 @@
+"substitution_data": {
+    "table_number": "1",
+    "orders": [
+      {
+        "order_number": 1,
+        "isMember": true,
+        "items": [
+          {
+            "name": "Sandwich",
+            "price": "10.00"
+          },
+          {
+            "name": "Chips",
+            "price": "2.50"
+          },
+          {
+            "name": "Soda",
+            "price": "1.99"
+          }
+        ],
+        "subtotal": "14.49"
+      },
+      {
+        "order_number": 2,
+        "isMember": false,
+        "items": [
+          {
+            "name": "Pizza Slice",
+            "price": "2.00"
+          },
+          {
+            "name": "Soda",
+            "price": "1.99"
+          }
+        ],
+        "subtotal": "3.99"
+      }
+    ]
+  }
